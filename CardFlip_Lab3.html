@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Flip</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card-container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:center;
+
+        }
+        .card{
+            width:300px;
+            height: 500px;
+            perspective: 1000px;
+            margin:20px;
+        }
+        .card-inner{
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+        .card-front,.card-back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+
+        }
+        .card:hover .card-inner{
+            transform: rotateY(180deg);
+        }
+        .card-back{
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Apple_front.jpeg" class="card-img-top" alt="Front Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple Inc.</h5>
+                            <p class="card-text">Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley.</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src="Apple_back.jpeg" class="card-img-top" alt="Back Img">
+                        <div class="card-body">
+                            <h5 class="card-title">CEO: Tim Cook</h5>
+                            <p class="card-text">Timothy Donald Cook is an American business 
+                                executive who became the chief executive officer of Apple Inc. in 2011.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Microsoft_Front.webp" class="card-img-top" alt="Front Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Microsoft</h5>
+                            <p class="card-text">Microsoft Corporation is an American multinational technology 
+                                corporation headquartered in Redmond, Washington, United States.</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src="Microsoft_Back.jpeg" class="card-img-top" alt="Back Img">
+                        <div class="card-body">
+                            <h5 class="card-title">CEO: Satya Nadella</h5>
+                            <p class="card-text">Satya Narayana Nadella is an Indian-American business executive. 
+                                He is the executive chairman and CEO of Microsoft, 
+                                succeeding Steve Ballmer in 2014 as CEO and John W. Thompson in 2021 as chairman.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Google_front.png" class="card-img-top" alt="Front Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Google</h5>
+                            <p class="card-text">Google LLC is an American multinational technology 
+                                company located in Menlo Park, California, United States.</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src="Google_back.webp" class="card-img-top" alt="Back Img">
+                        <div class="card-body">
+                            <h5 class="card-title">CEO: Sundar Pichai</h5>
+                            <p class="card-text">Pichai Sundararajan, better known as Sundar Pichai, is an Indian-born American business executive. 
+                                He is the chief executive officer of Alphabet Inc. and its subsidiary Google. 
+                                Pichai began his career as a materials engineer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Wallmart_front.jpeg" class="card-img-top" alt="Front Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Walmart</h5>
+                            <p class="card-text">Walmart is an American multinational retail corporation 
+                                headquartered in Bentonville, Arkansas.</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src="walmart_back.webp" class="card-img-top" alt="Back Img">
+                        <div class="card-body">
+                            <h5 class="card-title">CEO: Doug McMillon</h5>
+                            <p class="card-text">Carl Douglas McMillon is an American businessman,
+                                 and the president and chief executive officer of Walmart Inc. 
+                                 He sits on the retailer's board of directors. 
+                                 Having first joined the company as a summer associate in high school, he became the company's fifth CEO in 2014.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Mastercard_front.jpeg" class="card-img-top" alt="Front Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastercard</h5>
+                            <p class="card-text">Mastercard Inc. is the second-largest payment-technology corporation 
+                                located in  Purchase, Harrison, New York, United States.</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src="mastercard_back.avif" class="card-img-top" alt="Back Img">
+                        <div class="card-body">
+                            <h5 class="card-title">CEO: Michael Miebach</h5>
+                            <p class="card-text">Michael Miebach is chief executive officer of Mastercard and a member of the company's board of directors. 
+                                He is leading the company into a more digital world where Mastercard powers economies and 
+                                empowers people by harnessing innovation and the continued application of new technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="cocacola_front.png" class="card-img-top" alt="Front Img">
+                        <div class="card-body">
+                            <h5 class="card-title">Coca Cola</h5>
+                            <p class="card-text">The Coca-Cola Company is an American multinational corporation 
+                                located in Atlanta, Georgia, U.S.</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src="cocacola_back.webp" class="card-img-top" alt="Back Img">
+                        <div class="card-body">
+                            <h5 class="card-title">CEO: James Quincey</h5>
+                            <p class="card-text">James Robert B. Quincey is a British businessman based in the United States. 
+                                After starting his career at Bain & Co, he joined The Coca-Cola Company in 1996 and was later named chief operating officer. 
+                                He is now the chairman and chief executive officer at the company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
